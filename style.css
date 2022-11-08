@@ -269,17 +269,23 @@ nav ul{
     flex-direction: column;
     width: 350px;
     margin: 1.5rem 0;
+    cursor: pointer;
 }
 .expertises-box:nth-child(2){
     margin: 1.5rem 3rem;
 }
 .expertises-box-img{
     width: 100%;
+    overflow: hidden;
 }
 .expertises-box-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all .4s ease;
+}
+.expertises-box:hover .expertises-box-img img{
+    transform: scale(1.1);
 }
 .expertises-box-desc{
     display: flex;
