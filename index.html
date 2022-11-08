@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,12 @@
     <script src="https://kit.fontawesome.com/79f75f2740.js" crossorigin="anonymous"></script>
     <title>ollie</title>
 </head>
+
 <body>
     <nav>
         <div class="logo">
-            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page278/ollie/assets/imgs/brand.svg" alt="">
+            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page278/ollie/assets/imgs/brand.svg"
+                alt="">
         </div>
         <ul>
             <li><a href="#">Home</a></li>
@@ -21,7 +24,7 @@
             <li><a href="#">Testomonial</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
-            <a  class="components" href="#">Components</a>
+            <a class="components" href="#">Components</a>
         </ul>
         <div class="hamburger">
             <div class="hambar"></div>
@@ -34,65 +37,105 @@
             <h1>We Make <br>
                 Responsive Design</h1>
 
-                <a href="#">Learn More</a>
+            <a href="#">Learn More</a>
         </div>
     </section>
     <section id="aboutus">
 
-            <div class="aboutus-desc">
-                <h5>nobis dolorem sapiente evenie.</h5>
-                <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sunt, unde aperiam aliquid quia repudiandae, ex harum quis amet delectus maxime, tempora possimus aut laboriosam magni corrupti labore. Doloremque, sit?</p>
-                <a href="#">Read more...</a>
-            </div>
-            <div class="aboutus-more">
-                <div class="aboutus-more-box">
-                    <i class="fa fa-light fa-calendar"></i>
-                    <div class="aboutus-more-box-right">
-                        <h1>15+</h1>
-                        <p>onsectetur perspiciatis</p>
-                    </div>
-                </div>
-                <div class="aboutus-more-box">
-                    <i class="fa-regular fa-star"></i>
-                    <div class="aboutus-more-box-right">
-                        <h1>3434+</h1>
-                        <p>onsectetur perspiciatis</p>
-                    </div>
-                </div>
-                <div class="aboutus-more-box">
-                    <i class="fa-regular fa-face-smile"></i>
-                    <div class="aboutus-more-box-right">
-                        <h1>125+</h1>
-                        <p>onsectetur perspiciatis</p>
-                    </div>
-                </div>
-                <div class="aboutus-more-box">
-                    <i class="fa-regular fa-user"></i>
-                    <div class="aboutus-more-box-right">
-                        <h1>80+</h1>
-                        <p>onsectetur perspiciatis</p>
-                    </div>
+        <div class="aboutus-desc">
+            <h5>nobis dolorem sapiente evenie.</h5>
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sunt, unde aperiam aliquid quia
+                repudiandae, ex harum quis amet delectus maxime, tempora possimus aut laboriosam magni corrupti labore.
+                Doloremque, sit?</p>
+            <a href="#">Read more...</a>
+        </div>
+        <div class="aboutus-more">
+            <div class="aboutus-more-box">
+                <i class="fa fa-light fa-calendar"></i>
+                <div class="aboutus-more-box-right">
+                    <h1>15+</h1>
+                    <p>onsectetur perspiciatis</p>
                 </div>
             </div>
-        </section>
-        <script>
+            <div class="aboutus-more-box">
+                <i class="fa-regular fa-star"></i>
+                <div class="aboutus-more-box-right">
+                    <h1>3434+</h1>
+                    <p>onsectetur perspiciatis</p>
+                </div>
+            </div>
+            <div class="aboutus-more-box">
+                <i class="fa-regular fa-face-smile"></i>
+                <div class="aboutus-more-box-right">
+                    <h1>125+</h1>
+                    <p>onsectetur perspiciatis</p>
+                </div>
+            </div>
+            <div class="aboutus-more-box">
+                <i class="fa-regular fa-user"></i>
+                <div class="aboutus-more-box-right">
+                    <h1>80+</h1>
+                    <p>onsectetur perspiciatis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="expertises">
+        <div class="expertises-header">
+            <h5>Blanditiis unde illum earum</h5>
+            <h1>Expertises</h1>
+        </div>
+
+        <div class="expertises">
+            <div class="expertises-box">
+                <div class="expertises-box-img">
+                    <img src="/table.jpg" alt="">
+                </div>
+                <div class="expertises-box-desc">
+                    <h1>Coding & Designing</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="expertises-box">
+                <div class="expertises-box-img">
+                    <img src="/laptop.jpg" alt="">
+                </div>
+                <div class="expertises-box-desc">
+                    <h1>Coding & Designing</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="expertises-box">
+                <div class="expertises-box-img">
+                    <img src="/tablet.jpg" alt="">
+                </div>
+                <div class="expertises-box-desc">
+                    <h1>Coding & Designing</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
         var navBar = document.querySelector("nav");
         var hamburger = document.querySelector(".hamburger");
 
-        hamburger.addEventListener("click" , ()=>{
+        hamburger.addEventListener("click", () => {
             hamburger.classList.toggle('active');
             navBar.classList.toggle('active');
         })
 
-        window.addEventListener("scroll" , ()=>{
-            if(scrollY > 100){
+        window.addEventListener("scroll", () => {
+            if (scrollY > 100) {
                 navBar.classList.add("active-bg");
-            }else{
+            } else {
                 navBar.classList.remove("active-bg");
             }
         })
 
-    </script>    
+    </script>
 </body>
+
 </html>

@@ -231,10 +231,107 @@ nav ul{
 .aboutus-more-box:nth-child(3) ,.aboutus-more-box:nth-child(4){
     margin-top: 5rem;
 }
+/* Expertises */
+#expertises{
+    background-color: #f1fafb;
+    padding: 8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.expertises-header{
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 1111px;
+}
+.expertises-header h5{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: grey;
+}
+.expertises-header h1{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.expertises{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.expertises-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    margin: 1.5rem 0;
+}
+.expertises-box:nth-child(2){
+    margin: 1.5rem 3rem;
+}
+.expertises-box-img{
+    width: 100%;
+}
+.expertises-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.expertises-box-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 3rem 1rem;
+}
+.expertises-box:hover .expertises-box-desc h1{
+    color: #111;
+}
+.expertises-box-desc h1{
+    font-size: 2rem;
+    color: #2c3e50;
+    transition: all .3s ease;
+}
+.expertises-box-desc p{
+    margin-top: 1rem;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+}
 
+
+@media screen and (max-width:1160px) {
+    .expertises-box {
+        width: 295px;
+    }
+    .expertises-header {
+        width: 947px;
+    }
+}
 @media screen and (max-width:1070px) {
     .aboutus-more {
         width: 549px;
+    }
+}
+@media screen and (max-width:970px) {
+    .expertises-header {
+        width: 703px;
+    }
+    .expertises{
+        flex-wrap: wrap;
+    }
+    .expertises-box {
+        width: 336px;
+    }
+    .expertises-box:nth-child(2){
+        margin: 1.5rem 1.5rem;
+    }
+    .expertises-box{
+        margin: 1.5rem 1.5rem;
     }
 }
 @media screen and (max-width:940px) {
@@ -282,6 +379,14 @@ nav ul{
     }
     .hamburger{
         display: inherit;
+    }
+}
+@media screen and (max-width:760px) {
+    .expertises-box{
+        width: 70%;
+    }
+    .expertises-header {
+        width: 70%;
     }
 }
 @media screen and (max-width:700px) {
@@ -340,6 +445,12 @@ nav ul{
     nav ul {
         width: 90vw;
     }
+    .expertises-box{
+        width: 85%;
+    }
+    .expertises-header{
+        width: 85%;
+    }
 }
 @media screen and (max-width:410px) {
     .header h1 {
@@ -364,5 +475,11 @@ nav ul{
 @media screen and (max-width:300px) {
     #aboutus {
         padding: 8rem 0 8rem 0rem;
-    }    
+    }  
+    .expertises-box{
+        width: 90%;
+    }
+    .expertises-header{
+        width: 90%;
+    }  
 }
