@@ -308,14 +308,97 @@ nav ul{
     line-height: 2.5rem;
     font-size: 1.4rem;
 }
+/* Products */
+#products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7rem 0;
+}
+.products-header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 1050px;
+    margin-bottom: 4rem;
+}
+.products-header h5{
+    font-size: 1.3rem;
+    color: grey;
+}
+.products-header h1{
+    font-size: 2.8rem;
+}
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.products-box-img{
+    width: 100%;
+}
+.products-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.products-box-desc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    width: 100%;
+}
+.products-box-desc h1{
+    font-size: 1.7rem;
+    color: var(--main);
+    transition: all .3s ease;
+}
+.products-box:hover .products-box-desc h1{
+    color: var(--main-hover);
+}
+.products-box-desc p{
+    font-size: 1.3rem;
+    color: grey;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+}
 
-
+@media screen and (max-width:1305px) {
+    .products-box {
+        width: 250px;
+    }
+}
 @media screen and (max-width:1160px) {
     .expertises-box {
         width: 295px;
     }
     .expertises-header {
         width: 947px;
+    }
+    .products{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .products-box{
+        margin: 1.5rem 1rem;
+        width: 400px;
+    }
+    .products-header {
+        width: 886px;
     }
 }
 @media screen and (max-width:1070px) {
@@ -338,6 +421,9 @@ nav ul{
     }
     .expertises-box{
         margin: 1.5rem 1.5rem;
+    }
+    .products-header {
+        width: 90%;
     }
 }
 @media screen and (max-width:940px) {
@@ -385,6 +471,11 @@ nav ul{
     }
     .hamburger{
         display: inherit;
+    }
+}
+@media screen and (max-width:860px) {
+    .products-box {
+        width: 42%;
     }
 }
 @media screen and (max-width:760px) {
@@ -443,6 +534,12 @@ nav ul{
         align-items: flex-start;
         justify-content: flex-start;
     }
+    .products-header{
+        width: 80%;
+    }
+    .products-box{
+        width: 80%;
+    }
 }
 @media screen and (max-width:00px) {
     
@@ -464,6 +561,12 @@ nav ul{
     }
     #aboutus {
         padding: 8rem 0 8rem 1rem;
+    }
+    .products-header{
+        width: 90%;
+    }
+    .products-box{
+        width: 90%;
     }
 }
 @media screen and (max-width:320px) {
