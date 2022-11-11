@@ -376,7 +376,73 @@ nav ul{
     line-height: 2.5rem;
     margin-top: 1rem;
 }
-
+/* Testimonials */
+#testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8rem 0;
+}
+.testimonials-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 1085px;
+    margin-bottom: 4rem;
+}
+.testimonials-header h5{
+    font-size: 1.3rem;
+    color: grey;
+}
+.testimonials-header h1{
+    font-size: 3rem;
+}
+.testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.testimonials img{
+    width:140px;
+    height:140px;
+    border-radius: 50%;
+    margin-right: 5rem;
+}
+.testimonials-desc{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 900px;
+}
+.testimonials-desc i{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #636669;
+}
+.testimonials-desc .fa-quote-left-left{
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+.testimonials-desc p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+.testimonials-desc-info{
+    text-align: left;
+}
+.testimonials-desc-info h1{
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--main-hover);
+}
+.testimonials-desc-info h5{
+    color: #636669;
+    font-size: 1.3rem;
+}
 @media screen and (max-width:1305px) {
     .products-box {
         width: 250px;
@@ -399,6 +465,12 @@ nav ul{
     }
     .products-header {
         width: 886px;
+    }
+    .testimonials-desc {
+        width: 600px;
+    }
+    .testimonials-header {
+        width: 780px;
     }
 }
 @media screen and (max-width:1070px) {
@@ -477,6 +549,13 @@ nav ul{
     .products-box {
         width: 42%;
     }
+    .testimonials-desc {
+        width: 380px;
+        text-align: center;
+    }
+    .testimonials-header {
+        width: 80%;
+    }
 }
 @media screen and (max-width:760px) {
     .expertises-box{
@@ -540,9 +619,20 @@ nav ul{
     .products-box{
         width: 80%;
     }
+    .testimonials {
+        flex-direction: column;
+    }
+    .testimonials-desc{
+        margin-top: 3rem;
+    }
+    .testimonials img {
+        margin-right: 0;
+    }
 }
-@media screen and (max-width:00px) {
-    
+@media screen and (max-width:500px) {
+    .testimonials-desc {
+        width: 80%;
+    }
 }
 @media screen and (max-width:450px) {
     nav ul {
